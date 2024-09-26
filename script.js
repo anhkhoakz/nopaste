@@ -302,7 +302,9 @@ const testAllModes = () => {
 };
 
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
+    navigator.serviceWorker.register(
+        "https://cdn.jsdelivr.net/gh/anhkhoakz/nopaste@master/sw.js"
+    );
 }
 
 init();
